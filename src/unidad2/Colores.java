@@ -27,9 +27,9 @@ verde y azul).**/
 	    System.out.print("Introduzca el valor de B");
 	    float b= teclado.nextFloat();
 	    
-	    float y= ((0.299f*r) + (0.587f*g) + (0.114f*b))/255;
-	    float i= ((0.596f*r) - (0.275f*g) - (0.321f*b))/255;
-	    float q= ((0.212f*r) + (0.523f*g) + (0.311f*b))/255; 
+	    float y= (0.299f*r) + (0.587f*g) + (0.114f*b);
+	    float i= (0.596f*r) - (0.275f*g) - (0.321f*b);
+	    float q= (0.212f*r) - (0.528f*g) + (0.311f*b); 
 	    
 	    System.out.printf("El resultado en YIQ es:%.3f, %.3f, %.3f",y, i, q);
 	    
