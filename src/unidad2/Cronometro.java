@@ -8,6 +8,13 @@ public class Cronometro {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
+		/*3. En el método main de una clase Java llamada Cronometro escribe un programa
+que pida al usuario que introduzca mediante el teclado su nombre y a
+continuación muestre en la consola un mensaje que incluya un número real que
+represente los segundos y milisegundos que ha tardado en contestar, con un
+formato de salida que emplee exactamente 3 dígitos en la parte decimal.
+Realiza el ejercicio sin utilizar la clase Scanner.**/
+		
 		System.out.print("Introduzca su nombre:");
 		double t1= System.currentTimeMillis();
 		BufferedReader in= new BufferedReader(new InputStreamReader(System.in));
@@ -21,9 +28,9 @@ public class Cronometro {
 
 	}
 
-	private static double  currentTimemillis() {
+	/*private static double  currentTimemillis() {
 		// TODO Auto-generated method stub
 		return 0;
-	}
+	}**/
 
 }
