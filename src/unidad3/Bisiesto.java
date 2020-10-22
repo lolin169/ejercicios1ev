@@ -1,4 +1,5 @@
 package unidad3;
+
 import java.util.*;
 
 public class Bisiesto {
@@ -6,23 +7,25 @@ public class Bisiesto {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		 3. En el método main de una clase llamada Bisiesto escribe un programa que
-         utilizando una única expresión lógica determine si un año es o no es bisiesto. El
-         año se introducirá por teclado y el resultado lo mostrará en la pantalla. Un año
-         es bisiesto si es múltiplo de 4. Los años múltiplos de 100 no son bisiestos, salvo
-         si son múltiplos de 400.
-
+		 * 3. En el mï¿½todo main de una clase llamada Bisiesto escribe un programa que
+		 * utilizando una ï¿½nica expresiï¿½n lï¿½gica determine si un aï¿½o es o no es
+		 * bisiesto. El aï¿½o se introducirï¿½ por teclado y el resultado lo mostrarï¿½ en la
+		 * pantalla. Un aï¿½o es bisiesto si es mï¿½ltiplo de 4. Los aï¿½os mï¿½ltiplos de 100
+		 * no son bisiestos, salvo si son mï¿½ltiplos de 400.
+		 * 
 		 **/
-		
-		Scanner teclado=new Scanner(System.in);
-		System.out.println("Escriba un año");
-		int año= teclado.nextInt();
-		if(año%4==0 && año%400==0 ^ año%100!=0) {
-			
-			System.out.println("El año es BISIESTO (año "+año+")");
+
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Escriba un aÃ±o");
+		int aÃ±o = teclado.nextInt();
+		if (aÃ±o % 4 == 0 && aÃ±o % 400 == 0 ^ aÃ±o % 100 != 0) {
+
+			System.out.println("El aÃ±o es BISIESTO (aÃ±o " + aÃ±o + ")");
 		}
 
-		else {System.out.println("El año NO"+ " es bisiesto (año "+año+")");}
+		else {
+			System.out.println("El aÃ±o NO" + " es bisiesto (aÃ±o " + aÃ±o + ")");
+		}
 	}
 
 }
