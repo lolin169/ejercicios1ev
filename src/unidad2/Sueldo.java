@@ -27,13 +27,13 @@ public class Sueldo {
 		System.out.print("Escriba el total de la segunda venta del mes:");
 		float venta2 = teclado.nextFloat();
 		venta2 = venta2 * 0.1f;
-		System.out.print("Por �ltimo, escriba el total de la tercera venta:");
+		System.out.print("Por último, escriba el total de la tercera venta:");
 		float venta3 = teclado.nextFloat();
 		venta3 = venta3 * 0.1f;
 
 		float nómina = sbase + venta1 + venta2 + venta3;
 
-		System.out.println("Su sueldo este mes ser� de: " + nómina + " �uros.");
+		System.out.println("Su sueldo este mes será de: " + nómina + " €uros.");
 
 	}
 

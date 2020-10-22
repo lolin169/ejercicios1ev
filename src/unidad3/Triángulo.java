@@ -48,7 +48,7 @@ public class Triángulo {
 
 		else if (num1 != num2 && num1 != num3 && num2 != num3) {
 
-			System.out.println("El tri�ngulo es ESCALENO.");
+			System.out.println("El triángulo es ESCALENO.");
 
 		}
 

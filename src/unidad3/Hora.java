@@ -7,7 +7,7 @@ public class Hora {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		 * 2. En el método main de una clase llamada Hora escribe un programa que lea
+		 * 2. En el mÃ©todo main de una clase llamada Hora escribe un programa que lea
 		 * una hora (horas, minutos y segundos) desde el teclado y muestre en la
 		 * pantalla la hora correspondiente al segundo siguiente. Realiza la lectura de
 		 * los datos de entrada como estimes oportuno.
@@ -16,7 +16,7 @@ public class Hora {
 		System.out.println("Programa para Calcular el tiempo siguiente al dado.");
 		System.out.print("Escriba la hora:..");
 		int hora = teclado.nextInt();
-		System.out.print("Ahora escriba los minuto:..");
+		System.out.print("Ahora escriba los minutos:..");
 		int minutos = teclado.nextInt();
 		System.out.print("Diga ahora los segundos..");
 		int segundos = teclado.nextInt();

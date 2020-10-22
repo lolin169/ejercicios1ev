@@ -8,33 +8,33 @@ public class AdivinaNumero {
 		// TODO Auto-generated method stub
 
 		/*
-		 * 7. En el método main de una clase llamada AdivinaNumero escribe un programa
-		 * para jugar a un juego de adivinación. El juego consiste en que el ordenador
-		 * genera un número aleatorio entre 1 y N, ambos incluidos, siendo N un número
-		 * entero mayor o igual que 1.000 y menor o igual que 100.000, que también
-		 * elegirá de forma aleatoria. Una vez elegidos, el ordenador mostrará el
-		 * mensaje “He pensado un número entre 1 y N, adivina cuál es: “. El usuario
-		 * tendrá que introducir números hasta que acierte el que ha pensado el
-		 * ordenador. Cada vez que introduzca un número y no acierte el ordenador le
-		 * dirá si es mayor o menor que el que ha pensado y le volverá a preguntar
-		 **/
+		 7. En el mÃ©todo main de una clase llamada AdivinaNumero escribe un programa
+		para jugar a un juego de adivinaciÃ³n. El juego consiste en que el ordenador
+		genera un nÃºmero aleatorio entre 1 y N, ambos incluidos, siendo N un nÃºmero
+		entero mayor o igual que 1.000 y menor o igual que 100.000, que tambiÃ©n
+		elegirÃ¡ de forma aleatoria. Una vez elegidos, el ordenador mostrarÃ¡ el mensaje
+		â€œHe pensado un nÃºmero entre 1 y N, adivina cuÃ¡l es: â€œ. El usuario tendrÃ¡ que
+		introducir nÃºmeros hasta que acierte el que ha pensado el ordenador. Cada vez
+		que introduzca un nÃºmero y no acierte el ordenador le dirÃ¡ si es mayor o menor
+		que el que ha pensado y le volverÃ¡ a preguntar.
+		**/
 
 		Random ran = new Random();
 
-		System.out.println("Bienvenido al juego de adivinar un número que ha pensado ésta computadora");
+		System.out.println("Bienvenido al juego de adivinar un nÃºmero que ha pensado Ã©sta computadora");
 		Scanner teclado = new Scanner(System.in);
 		int N = 1000 + ran.nextInt(99000);
 		int aleatorio = ran.nextInt(N) + 1;
-		System.out.println("El rango del número que has de calcular está entre 1 y " + N);
-		System.out.println("Introduce un número");
+		System.out.println("El rango del nÃºmero que has de calcular estÃ¡ entre 1 y " + N);
+		System.out.println("Introduce un nÃºmero");
 		int numero = teclado.nextInt();
 		int contador = 1;
 		do {
 			if (numero > aleatorio) {
-				System.out.print("El número es MENOR.Dime otro..(1-" + N + ")");
+				System.out.print("El nÃºmero es MENOR.Dime otro..(1-" + N + ")");
 				numero = teclado.nextInt();
 			} else {
-				System.out.print("El número es MAYOR.Dime otro..(1-" + N + ")");
+				System.out.print("El nÃºmero es MAYOR.Dime otro..(1-" + N + ")");
 				numero = teclado.nextInt();
 			}
 			contador++;
@@ -44,7 +44,7 @@ public class AdivinaNumero {
 		{
 
 			System.out.println(
-					"El número es Correcto:" + aleatorio + " .Lo has conseguido en: " + contador + " intentos.");
+					"El nÃºmero es Correcto:" + aleatorio + " .Lo has conseguido en: " + contador + " intentos.");
 
 		}
 

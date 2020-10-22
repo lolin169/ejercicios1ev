@@ -9,15 +9,16 @@ public class Calculadora {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		 * 6. En el método main de una clase llamada Calculadora escribe un programa que
-		 * funcione como una calculadora. El usuario tendrá que elegir con el teclado la
-		 * operación que desea realizar (suma, resta, multiplicación o división) o salir
-		 * del programa. Si elige una operación, se pedirán por teclado dos números y a
-		 * continuación se mostrará el resultado de la operación con el formato número1
-		 * op número2 = resultado, donde op será el símbolo que corresponda: +, -, x, /.
-		 * Cada vez que se muestre resultado, el usuario podrá volver a elegir otra
-		 * operación o salir.
-		 * 
+		  6. En el mÃ©todo main de una clase llamada Calculadora escribe un programa que
+		 funcione como una calculadora. El usuario tendrÃ¡ que elegir con el teclado la
+		 operaciÃ³n que desea realizar (suma, resta, multiplicaciÃ³n o divisiÃ³n) o salir del
+		 programa. Si elige una operaciÃ³n, se pedirÃ¡n por teclado dos nÃºmeros y a
+		 continuaciÃ³n se mostrarÃ¡ el resultado de la operaciÃ³n con el formato nÃºmero1
+		 op nÃºmero2 = resultado, donde op serÃ¡ el sÃ­mbolo que corresponda: +, -, x, /.
+         Cada vez que se muestre resultado, el usuario podrÃ¡ volver a elegir otra
+         operaciÃ³n o salir
+
+		 
 		 **/
 
 		Scanner teclado = new Scanner(System.in);
@@ -33,9 +34,9 @@ public class Calculadora {
 			case 1:
 
 				System.out.println("Sumar");
-				System.out.print("Introduzca el primer número de la suma..");
+				System.out.print("Introduzca el primer nÃºmero de la suma..");
 				int suma1 = teclado.nextInt();
-				System.out.print("Introduzca el segundo número de la suma..");
+				System.out.print("Introduzca el segundo nÃºmero de la suma..");
 				int suma2 = teclado.nextInt();
 				System.out.println("El resultado de sumar " + suma1 + "+" + suma2 + "=" + (suma1 + suma2));
 				break;
@@ -43,9 +44,9 @@ public class Calculadora {
 			case 2:
 
 				System.out.println("Restar");
-				System.out.print("Introduzca el primer número de la resta..");
+				System.out.print("Introduzca el primer nÃºmero de la resta..");
 				int resta1 = teclado.nextInt();
-				System.out.print("Introduzca el segundo número de la resta..");
+				System.out.print("Introduzca el segundo nÃºmero de la resta..");
 				int resta2 = teclado.nextInt();
 				System.out.println("El resultado de restar " + resta1 + "-" + resta2 + "=" + (resta1 - resta2));
 				break;
@@ -53,9 +54,9 @@ public class Calculadora {
 			case 3:
 
 				System.out.println("Multiplicar");
-				System.out.print("Introduzca el primer número de la multiplicación..");
+				System.out.print("Introduzca el primer nÃºmero de la multiplicaciÃ³n..");
 				int mul1 = teclado.nextInt();
-				System.out.print("Introduzca el segundo número de la multiplicación..");
+				System.out.print("Introduzca el segundo nÃºmero de la multiplicaciÃ³n..");
 				int mul2 = teclado.nextInt();
 				System.out.println("El resultado de multiplicar " + mul1 + "x" + mul2 + "=" + (mul1 * mul2));
 				break;
@@ -63,9 +64,9 @@ public class Calculadora {
 			case 4:
 
 				System.out.println("Dividir");
-				System.out.print("Introduzca el primer número de la división..");
+				System.out.print("Introduzca el primer nÃºmero de la divisiÃ³n..");
 				int div1 = teclado.nextInt();
-				System.out.print("Introduzca el segundo número de la división..");
+				System.out.print("Introduzca el segundo nÃºmero de la divisiÃ³n..");
 				int div2 = teclado.nextInt();
 				System.out.println("El resultado de dividir " + div1 + ":" + div2 + "=" + (div1 / div2));
 				break;
@@ -76,9 +77,9 @@ public class Calculadora {
 				break;
 			}
 
-			System.out.println("Repetimos o Salimos?¿ r o s");
+			System.out.println("Repetimos o Salimos?Â¿ r o s");
 
-			accion = teclado.next().charAt(0);
+		  accion = teclado.next().charAt(0);
 		} while (accion == 'r');
 		{
 		}

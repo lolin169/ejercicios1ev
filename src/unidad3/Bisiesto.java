@@ -7,12 +7,12 @@ public class Bisiesto {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		 * 3. En el m�todo main de una clase llamada Bisiesto escribe un programa que
-		 * utilizando una �nica expresi�n l�gica determine si un a�o es o no es
-		 * bisiesto. El a�o se introducir� por teclado y el resultado lo mostrar� en la
-		 * pantalla. Un a�o es bisiesto si es m�ltiplo de 4. Los a�os m�ltiplos de 100
-		 * no son bisiestos, salvo si son m�ltiplos de 400.
-		 * 
+	     3. En el método main de una clase llamada Bisiesto escribe un programa que
+		utilizando una única expresión lógica determine si un año es o no es bisiesto. El
+		año se introducirá por teclado y el resultado lo mostrará en la pantalla. Un año
+		es bisiesto si es múltiplo de 4. Los años múltiplos de 100 no son bisiestos, salvo
+		si son múltiplos de 400.
+
 		 **/
 
 		Scanner teclado = new Scanner(System.in);

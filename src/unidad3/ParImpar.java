@@ -7,29 +7,29 @@ public class ParImpar {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		 * 1. En el método main de una clase llamada ParImpar escribe un programa que
-		 * diga si un número introducido por teclado es par o impar.
+		 * 1. En el mÃ©todo main de una clase llamada ParImpar escribe un programa que
+		 * diga si un nÃºmero introducido por teclado es par o impar.
 		 **/
 
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Introduzca un número..");
+		System.out.println("Introduzca un nÃºmero..");
 		int numero = teclado.nextInt();
 
 		/*
 		 * while (numero>32.767 ||numero<-32.767) {
 		 * 
 		 * System.out.
-		 * println("Error.El número introducido no es un número entero.Introduzca un número de tipo ENTERO.."
-		 * ); numero=teclado.nextInt(); //Prueba para un programa que pida un número de
+		 * println("Error.El nÃºmero introducido no es un nÃºmero entero.Introduzca un nÃºmero de tipo ENTERO.."
+		 * ); numero=teclado.nextInt(); //Prueba para un programa que pida un nÃºmero de
 		 * tipo ENTERO }
 		 **/
 
 		if (numero % 2 == 0) {
-			System.out.print("El número introducido es PAR: " + numero);
+			System.out.print("El nÃºmero introducido es PAR: " + numero);
 		}
 
 		else {
-			System.out.print("El número introducido es IMPAR: " + numero);
+			System.out.print("El nÃºmero introducido es IMPAR: " + numero);
 		}
 
 	}
