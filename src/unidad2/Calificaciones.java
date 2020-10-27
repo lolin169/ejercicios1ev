@@ -1,6 +1,8 @@
 package unidad2;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Calificaciones {
 
@@ -65,7 +67,7 @@ public class Calificaciones {
 		System.out.print("Introduce la nota de la tercera tarea:");
 		float tarea3q = Float.parseFloat(in.readLine());
 
-		float mediatareasq = (tarea1m + tarea2m + tarea3m) / 3;
+		float mediatareasq = (tarea1q + tarea2q + tarea3q) / 3;
 		double mediaq = (mediatareasq * 0.15) + (exaq * 0.85);
 
 		System.out.printf(

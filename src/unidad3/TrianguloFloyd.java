@@ -1,6 +1,6 @@
 package unidad3;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class TrianguloFloyd {
 
@@ -19,6 +19,7 @@ public class TrianguloFloyd {
 		Scanner teclado= new Scanner(System.in);
 		System.out.println("Bienvenido al triángulo de FLoyd.Introduzca el número de filas deseado..");
 		int filas= teclado.nextInt();
+		int contador=0;
 		
 		while(filas<=0){
 			
@@ -27,10 +28,11 @@ public class TrianguloFloyd {
 		}
 		
 		for (int i=1;i<=filas;i++) {
-			int contador=1;
+			 
 			for(int j=1;j<=i;j++) {
-				System.out.print(contador+" ");
 				contador++;
+				System.out.print(contador+" ");
+				
 			}
 			System.out.println("");
 		}

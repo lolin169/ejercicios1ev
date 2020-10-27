@@ -1,7 +1,8 @@
 package unidad2;
 
-import java.io.*;
-import java.lang.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Cronometro {
 

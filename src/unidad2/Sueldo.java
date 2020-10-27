@@ -1,6 +1,6 @@
 package unidad2;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Sueldo {
 

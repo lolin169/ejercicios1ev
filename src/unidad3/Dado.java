@@ -1,6 +1,7 @@
 package unidad3;
 
-import java.util.*;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Dado {
 

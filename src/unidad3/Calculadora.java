@@ -2,8 +2,6 @@ package unidad3;
 
 import java.util.Scanner;
 
-import com.sun.org.apache.xpath.internal.operations.Equals;
-
 public class Calculadora {
 
 	public static void main(String[] args) {

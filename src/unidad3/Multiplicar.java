@@ -1,6 +1,6 @@
 package unidad3;
 
-import java.util.*;
+import java.util.Scanner;
 
 class Multiplicar {
 
