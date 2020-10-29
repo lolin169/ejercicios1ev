@@ -41,9 +41,9 @@ public class AdivinoNumero {
 
 				numero = ran.nextInt(i + 1) + 1;
 				System.out.println("El número es "+numero + "¿Si,Mayor o Menor?");
-
+               
 			}
-
+            
 			respuesta = teclado.next();
 			contador++;
 		}
