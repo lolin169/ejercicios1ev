@@ -40,13 +40,6 @@ public class Ejercicio3 {
 					}
 					System.out.print("La cadena mayor es la cadena 2.");
 				}
-			/*if(mayor2=true) {
-					System.out.print("La cadena mayor es la cadena 2.");
-					}
-			
-			else{
-				System.out.print("La cadena mayor es la cadena 1.");
-				}**/
 	  
 		System.out.println("Está contenida "+contador+" veces en la otra.");
 		  
