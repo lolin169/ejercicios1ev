@@ -24,7 +24,8 @@ public class Ejercicio7 {
 
 		Scanner teclado= new Scanner(System.in);
 		int rango;
-		int templeado=0;
+		double templeado=0;
+		double templeado2=0;
 		do {
 			System.out.println("Introduce el tamaño del vector entre 10 y 1.000.000.. ");
 	        rango= teclado.nextInt();
@@ -34,7 +35,7 @@ public class Ejercicio7 {
 		int [] vector= new int[rango];
 		int aleatorio;
 		boolean repetido=false;
-		long t0= System.currentTimeMillis();
+		double t0= System.currentTimeMillis();
 		for(int i=0;i<vector.length;i++) {
 			aleatorio=(int)Math.floor(Math.random()*2000000-999999);
 			for(int j:vector) {
@@ -49,10 +50,10 @@ public class Ejercicio7 {
 					vector[i]=aleatorio;
 				}
 			
-			System.out.println(vector[i]);
+
 		}
-		long t1= System.currentTimeMillis();
-		templeado=(int)(t1-t0);
+		double t1= System.currentTimeMillis();
+		templeado=  t1-t0;
 		
 		int menor=0;
 		int mayor=0;
@@ -66,11 +67,12 @@ public class Ejercicio7 {
 			}
 		}
 		t1=System.currentTimeMillis();
+		templeado2= t1-t0;
 			
-		System.out.print("El tamaño del vector es: "+vector.length);
-		System.out.println(".El tiempo empleado en llenarlo ha sido: "+templeado+" nanosegundos(segundos/1000)");
-		System.out.print("El número mayor de todos en la matriz es: "+mayor+" y el menor: "+menor);
-		System.out.println(".El tiempo empleado en buscarlos ha sido: "+templeado+" nanosegundos(segundos/1000)");
+		System.out.println("El tamaño del vector es: "+vector.length);
+		System.out.println("El tiempo empleado en llenarlo ha sido: "+templeado+" nanosegundos(segundos/1000000)");
+		System.out.println("El número mayor de todos en la matriz es: "+mayor+" y el menor: "+menor);
+		System.out.println("El tiempo empleado en buscarlos ha sido: "+templeado2+" nanosegundos(segundos/1000000)");
 	}	
 	
 }
