@@ -27,7 +27,7 @@ public class Ejercicio8 {
 		while(rango<10 || rango>200) {
 			System.out.println("Error.Introduzca de nuevo el tamaño del vector entre 10 y 200");
 			rango=teclado.nextInt();
-			
+		
 		}
 		int [] vector= new int [rango];
 		for(int i=0;i<vector.length;i++) {
@@ -43,7 +43,7 @@ public class Ejercicio8 {
 		for(int i=0;i<vector.length;i++) {
 			
 			if(vector[i]==13) {
-				
+				contador++;
 				for(int z=1;z<14 && (z+i)<vector.length;z++) {
 				    
 					nosuma+=vector[i+z];
@@ -52,7 +52,8 @@ public class Ejercicio8 {
 				if(nosuma==7){
 					suma+=7;
 					nosuma-=7;
-					contador-=13;
+					contador-=1;
+					
 						
 				}
 
@@ -66,7 +67,7 @@ public class Ejercicio8 {
 		}
 		System.out.println("La suma de los números es: "+suma);
 		System.out.println(Arrays.toString(vector));
-		System.out.println("La suma de los números no sumados es: "+nosuma+" y la cantidad de números no sumados es: "+contador);
+		System.out.println("La cantidad de números no sumados es: "+contador);
 	}
 
 }
