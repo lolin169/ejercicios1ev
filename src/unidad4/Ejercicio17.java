@@ -17,9 +17,11 @@ public class Ejercicio17 {
 		 
 		int[] vectora= crearVectorAleatorio();
 		int[] vectorb= crearVectorAleatorio();
+		
 		OrdenaVectores(vectora);
 		OrdenaVectores(vectorb);
 		int[] vectore=MezclaVectores(vectora, vectorb);
+		System.out.println(Arrays.toString(vectore));
 
 	}
 
@@ -57,19 +59,25 @@ public class Ejercicio17 {
 		
 		int rango=(vector.length+vector2.length);
 		int[]vector3=new int[rango];
-		int z=0;
-		for(int i=0;i<rango;i++) {
-			if(i<vector.length) {
-				vector3[z]=vector[i];
-				z++;
+		int z=0,i=0;
+		    for(int j=0;j<rango;j++){
+		    	if(i<vector.length&&z<vector2.length) {
+		    	   if(vector[i]<=vector2[z]){
+		    		vector3[j]=vector[i];
+		    		i++;
+		    	   }else{
+					vector3[j]=vector2[z];
+					z++;
+		    	   }
+		    	}else if(z==vector2.length) {
+		    		   vector3[j]=vector[i];
+		    		   i++;
+		    	}else {
+		    			vector3[j]=vector2[z];
+		    			z++;
+		    	}
 			}
-			if(i<vector2.length) {
-				vector3[z]=vector2[i];
-				z++;
-			}
-		}
-		OrdenaVectores(vector3);
-		 //o Arrays.sort(vector3);
+		    
 		return vector3;
 	}
 	
