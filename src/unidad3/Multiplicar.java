@@ -53,8 +53,5 @@ class Multiplicar {
 			System.out.print("Repetimos o Salimos?¿ r o s");
 			letra = teclado.next().charAt(0);
 		} while (letra == 'r');
-		{
-		}
-
 	}
 }

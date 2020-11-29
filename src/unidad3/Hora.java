@@ -38,8 +38,7 @@ public class Hora {
 		}
 
 		segundos++;
-		System.out
-				.println("La hora final es...:  " + hora + "hora/s " + minutos + "minuto/s " + segundos + "segundo/s.");
+		System.out.println("La hora final es...:  " + hora + "hora/s " + minutos + "minuto/s " + segundos + "segundo/s.");
 	}
 
 }
